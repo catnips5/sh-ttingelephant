@@ -1,0 +1,42 @@
+#########################################################
+#  Web-front-end project – ignore list
+#  מתאים לאתר סטטי (HTML + CSS + JS) עם/בלי כלי build
+#########################################################
+
+#–– מערכת ההפעלה ––#
+.DS_Store
+Thumbs.db
+Desktop.ini
+Icon?
+ehthumbs.db
+
+#–– לוגים ––#
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+#–– קבצי קונפיג נסיוניים / סודיים ––#
+.env
+.env.*
+
+#–– תיקיות Build/Cache נפוצות ––#
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+*.tgz
+
+#–– תלויות Node (אם תשתמש בעתיד) ––#
+node_modules/
+
+#–– עורך קוד / IDE ––#
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+#–– קבצי גיבוי ממיזוגים / פאצ'ים ––#
+*.orig
