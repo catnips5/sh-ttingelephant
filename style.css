@@ -1,0 +1,80 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #d6f5f5;
+  text-align: center;
+  padding-top: 40px;
+  direction: rtl;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.elephant {
+  font-size: 100px;
+  animation: breathe 3s ease-in-out infinite;
+  margin: 20px 0;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+#poop-container {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.poop {
+  position: absolute;
+  font-size: 28px;
+  animation: fall 2.5s ease forwards;
+  opacity: 1;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0); opacity: 1; }
+  90% { transform: translateY(200px); opacity: 0.8; }
+  100% { transform: translateY(230px) scale(0.9); opacity: 0.3; }
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  margin: 10px;
+  background-color: #8b5a2b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #a86c3a;
+}
+
+#score-board {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+#end-message {
+  font-size: 20px;
+  color: #007700;
+  margin-top: 20px;
+}

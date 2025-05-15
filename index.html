@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>משחק הפיל המחרבן</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐘 משחק הפיל המחרבן</h1>
+    <div class="elephant">🐘</div>
+    <div id="poop-container"></div>
+
+    <div id="score-board">
+      <p>ניקוד: <span id="score">0</span></p>
+      <p>זמן: <span id="time">10</span> שניות</p>
+    </div>
+
+    <button id="start-btn" onclick="startGame()">🎮 התחל משחק</button>
+    <button id="poop-btn" onclick="dropPoop()" disabled>💩 חירבן!</button>
+
+    <div id="end-message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
